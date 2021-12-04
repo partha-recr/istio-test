@@ -14,6 +14,7 @@ public class CommonExceptionHandler extends ResponseEntityExceptionHandler {
 	@ExceptionHandler(value = { Exception.class})
 	protected ResponseEntity<Object> handleConflict(RuntimeException ex, WebRequest request) {
 	        String bodyOfResponse = "Error in Payment Service";
+	        ex.printStackTrace();
 	        return handleExceptionInternal(ex, bodyOfResponse,new HttpHeaders(), HttpStatus.CONFLICT, request);
 	    }
 
