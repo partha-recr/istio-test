@@ -1,0 +1,16 @@
+apiVersion: security.istio.io/v1beta1
+kind: AuthorizationPolicy
+metadata:
+  name: "customer-req-authr-group"
+spec:
+  selector:
+    matchLabels:
+      app: customer-service
+  action: ALLOW
+  rules:
+  - from:
+    - source:
+       requestPrincipals: ["testing@secure.istio.io/testing@secure.istio.io"]
+    when:
+    - key: request.auth.claims[groups]
+      values: ["group1"]
