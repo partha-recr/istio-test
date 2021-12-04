@@ -24,4 +24,13 @@ kubectl apply -f deployments.yaml
 ---------Testing------
 curl --header "Authorization: partha" http://a7e6f290096ba466388ef9c2eece947d-873215654.ap-south-1.elb.amazonaws.com:8080/getcustomer
 
+Get JWT token :  curl https://raw.githubusercontent.com/istio/istio/release-1.6/security/tools/jwt/samples/demo.jwt
+
+curl --header "Authorization: Bearer partha" http://a7e6f290096ba466388ef9c2eece947d-873215654.ap-south-1.elb.amazonaws.com:8080/getcustomer
+
+curl https://raw.githubusercontent.com/istio/istio/release-1.6/security/tools/jwt/samples/groups-scope.jwt
+
+
+
+
 
