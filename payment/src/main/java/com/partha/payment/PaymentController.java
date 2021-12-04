@@ -18,4 +18,10 @@ public class PaymentController {
 		System.out.println("Authorization value is : " + authorization);
 		return "--From Payment with Version:" +version+" EndUser:"+endUser;
 	}
+	
+	@GetMapping("getroute")
+	public String getroute(@RequestHeader(value = "Authorization", required = false) String authorization) {
+		System.out.println("Authorization value is : " + authorization);
+		return version;
+	}
 }
