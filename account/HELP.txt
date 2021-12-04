@@ -22,11 +22,11 @@ kubectl apply -f deployments.yaml
 
 
 ---------Testing------
-curl --header "Authorization: partha" http://a7e6f290096ba466388ef9c2eece947d-873215654.ap-south-1.elb.amazonaws.com:8080/getcustomer
+curl --header "Authorization: partha" http://a51179c6d50fe41e8a6ecc4a3218c37f-1897630934.ap-south-1.elb.amazonaws.com/getcustomer
 
 Get JWT token :  curl https://raw.githubusercontent.com/istio/istio/release-1.6/security/tools/jwt/samples/demo.jwt
 
-curl --header "Authorization: Bearer partha" http://a7e6f290096ba466388ef9c2eece947d-873215654.ap-south-1.elb.amazonaws.com:8080/getcustomer
+curl --header "Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IkRIRmJwb0lVcXJZOHQyenBBMnFYZkNtcjVWTzVaRXI0UnpIVV8tZW52dlEiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjQ2ODU5ODk3MDAsImZvbyI6ImJhciIsImlhdCI6MTUzMjM4OTcwMCwiaXNzIjoidGVzdGluZ0BzZWN1cmUuaXN0aW8uaW8iLCJzdWIiOiJ0ZXN0aW5nQHNlY3VyZS5pc3Rpby5pbyJ9.CfNnxWP2tcnR9q0vxyxweaF3ovQYHYZl82hAUsn21bwQd9zP7c-LS9qd_vpdLG4Tn1A15NxfCjp5f7QNBUo-KC9PJqYpgGbaXhaGx7bEdFWjcwv3nZzvc7M__ZpaCERdwU7igUmJqYGBYQ51vr2njU9ZimyKkfDe3axcyiBZde7G6dabliUosJvvKOPcKIWPccCgefSj_GNfwIip3-SsFdlR7BtbVUcqR-yv-XOxJ3Uc1MI0tz3uMiiZcyPV7sNCU4KRnemRIMHVOfuvHsU60_GhGbiSFzgPTAa9WTltbnarTbxudb_YEOx12JiwYToeX0DCPb43W1tzIBxgm8NxUg" http://a51179c6d50fe41e8a6ecc4a3218c37f-1897630934.ap-south-1.elb.amazonaws.com/getcustomer
 
 curl https://raw.githubusercontent.com/istio/istio/release-1.6/security/tools/jwt/samples/groups-scope.jwt
 
