@@ -29,7 +29,7 @@ public class CustomerController {
 	private String url;
 
 	@GetMapping("getcustomer")
-	public String getCustomer(@RequestHeader(value = "Authorization", required = false) String authorization) {
+	public String getCustomer(@RequestHeader(value = "Authorization", required = false) String authorization ,@RequestHeader(value = "end-user", required = false) String endUser) {
 		HttpHeaders headers = new HttpHeaders();
 		headers.set("Authorization", authorization);
 		headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
@@ -37,7 +37,7 @@ public class CustomerController {
 		System.out.println("Authorization :" + authorization);
 		ResponseEntity<String> respEntity = restTemplate.exchange(url,HttpMethod.GET, entity, String.class);
 		//ResponseEntity<String> respEntity = restTemplate.exchange("http://localhost:8081/getaccount",HttpMethod.GET, entity, String.class);
-		return "--From Customer---version:" +version +" data: " + respEntity.getBody();
+		return "--From Customer---version:" +version +" End user:"+endUser+" data: " + respEntity.getBody();
 	}
 
 }
