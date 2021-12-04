@@ -14,8 +14,8 @@ public class PaymentController {
 	private String version;
 
 	@GetMapping("getpayment")
-	public String getPayment(@RequestHeader(value = "Authorization", required = false) String authorization) {
+	public String getPayment(@RequestHeader(value = "Authorization", required = false) String authorization,@RequestHeader(value = "end-user", required = false) String endUser) {
 		System.out.println("Authorization value is : " + authorization);
-		return "--From Payment with Version:" +version;
+		return "--From Payment with Version:" +version+" EndUser:"+endUser;
 	}
 }
