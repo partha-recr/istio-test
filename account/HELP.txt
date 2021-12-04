@@ -1,0 +1,27 @@
+aws ecr get-login-password --region ap-south-1
+mvn compile jib:build
+
+$env:Path = "C:\partha\springboot_aws;$env:Path"
+$env:Path = "C:\partha\istio\istio-1.11.4\bin;$env:Path"
+
+eksctl create cluster --name mycluster --nodegroup-name ng-default --node-type m5.large --nodes 2
+eksctl delete cluster --name mycluster
+
+kubectl create secret docker-registry awssecret --docker-server=542247608415.dkr.ecr.ap-south-1.amazonaws.com --docker-username=AWS --docker-password=$(aws ecr get-login-password)
+
+---------install Istio---and ----adds-on----
+1. cd C:\partha\istio\istio-1.11.4
+2. $env:Path = "C:\partha\istio\istio-1.11.4\bin;$env:Path"
+3. istioctl install --set profile=demo -y
+4. kubectl label namespace default istio-injection=enabled
+5. kubectl apply -f samples/addons
+6. istioctl dashboard kiali
+----------------------------end-------------------
+
+kubectl apply -f deployments.yaml
+
+
+---------Testing------
+curl --header "Authorization: partha" http://a7e6f290096ba466388ef9c2eece947d-873215654.ap-south-1.elb.amazonaws.com:8080/getcustomer
+
+
