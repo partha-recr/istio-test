@@ -54,10 +54,10 @@ public class AccountController {
 		HttpEntity<String> entity = new HttpEntity<String>(headers);
 		System.out.println("Authorization in route :"+authorization);
 		List<String> arr = new ArrayList();
-		for(int i=1;i<=200;i++){
+		for(int i=1;i<=100;i++){
 		ResponseEntity<String> respEntity = restTemplate.exchange(routeurl,HttpMethod.GET, entity, String.class);
 		arr.add(respEntity.getBody());
-		Thread.sleep(1000);
+		//Thread.sleep(1000);
 		}
 		String val = String.join("--", arr);
 		return val;
