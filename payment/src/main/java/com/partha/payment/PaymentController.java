@@ -1,6 +1,7 @@
 package com.partha.payment;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpHeaders;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,14 +15,14 @@ public class PaymentController {
 	private String version;
 
 	@GetMapping("getpayment")
-	public String getPayment(@RequestHeader(value = "Authorization", required = false) String authorization,@RequestHeader(value = "end-user", required = false) String endUser) {
-		System.out.println("Authorization value is : " + authorization);
-		return "--From Payment with Version:" +version+" EndUser:"+endUser;
+	public String getPayment(@RequestHeader HttpHeaders headers) {
+		System.out.println("Authorization value is : " + headers.get("Authorization"));
+		return "--From Payment-Version:" +version+" EndUser:"+headers.get("end-user");
 	}
 	
 	@GetMapping("getroute")
-	public String getroute(@RequestHeader(value = "Authorization", required = false) String authorization) {
-		System.out.println("Authorization value is : " + authorization);
+	public String getroute(@RequestHeader HttpHeaders headers) {
+		System.out.println("Authorization value is : " + headers.get("Authorization"));
 		return version;
 	}
 }
