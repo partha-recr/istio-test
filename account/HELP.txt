@@ -15,15 +15,10 @@ kubectl create secret docker-registry awssecret --docker-server=542247608415.dkr
 3. istioctl install --set profile=demo -y
 4. kubectl label namespace default istio-injection=enabled
 5. kubectl apply -f samples/addons
+Grafana : http://ab48fb2e10d654227830bcb50a3980cc-250560662.ap-south-1.elb.amazonaws.com/
+Kiali : http://ab48fb2e10d654227830bcb50a3980cc-250560662.ap-south-1.elb.amazonaws.com/kiali
+Jaeger : http://ab48fb2e10d654227830bcb50a3980cc-250560662.ap-south-1.elb.amazonaws.com/jaeger
 
-6. export INGRESS_HOST=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
-7. export INGRESS_DOMAIN=${INGRESS_HOST}.nip.io
-8. cd C:\partha\aws-eks-projects\istio-test\customer\k8s\aws\istio\telemetry ....kubectl apply -f ....all-yaml
-
-9.  http://kiali.nip.io
-10. http://prometheus.nip.io
-11. http://grafana.nip.io
-12. http://tracing.nip.io
 ----------------------------end-------------------
 
 kubectl apply -f deployments.yaml
