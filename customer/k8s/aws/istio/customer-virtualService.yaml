@@ -8,7 +8,10 @@ spec:
   gateways:
   - istio-system/customer-gateway
   http:
-  - route:
+  - match:
+    - uri:
+        prefix: /customer
+    route:
     - destination:
         host: customer-service
         port:
