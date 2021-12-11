@@ -1,0 +1,16 @@
+apiVersion: security.istio.io/v1beta1
+kind: AuthorizationPolicy
+metadata:
+  name: deny-method-get
+spec:
+  selector:
+    matchLabels:
+      app: account-service
+  action: DENY
+  rules:
+  - to:
+    - operation:
+        methods: ["GET"]
+    when:
+    - key: request.headers[x-user]
+      notValues: ["admin"]
