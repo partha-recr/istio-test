@@ -32,10 +32,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -79,6 +75,10 @@
 					</from>
 					<to>
 						<image>542247608415.dkr.ecr.ap-south-1.amazonaws.com/payment</image>
+						<auth>
+      						<username>AWS</username>
+      						<password>eyJwYXlsb2FkIjhghgoiMk9kaUdmcmZkUkltUk9UUWVGRTFGV2pqSVZoYTNyN25uVllwUDBkZkJ2eUc5SUgyRUF4QnBjZFdLSDZLZE51cEFYRldrM2lranFtTEZZNk0xSzBySHlFNFBqMC9XWE1yZ1IzMXpicWNKQlM3WWtSNXliRisrb2plRkR1YVNSN1ZvNGlvdGxPZ2FvLytmd3Y4M0xTWXNrQjlwVXphdlZUUGNjWmhlOUw3TVFwclFieUQ5TlpDNEZsdGpXVStMVTNwK09kOHVkbTFnamdpSG5ZTUQ1dkxubnJCcUg1eVNCd29Ca1FBWHhIcE5tNUx0M1JnQ3pPNittY2NFbE4yZFROVC84WWxxd1h6eUxUbXgvTzFHVUpCMzdPMlFPekZSNFhUUFdzR1d5TjZMcHBaNWFYZmNlam1JZHFucEE2Y0RWajljc0d2ait6NTloRzJqTUdCZ2RLMWZ3S1FhU3I1SnMvL0RyeGh0NGFabWR5c2JIb0hhMjI0NTlWWDR6Y3Fma1ZOZml1QmtNdllUSkUvSEt4bURlYjhmRjVNcDBGOGNnOU5QWCs5bHBTaTY1eWhBeTBDOHdaekFlV1hVOS9sbmIwU1krejgyTld6ekpheVUxS2hvTFNJR09EcFRnUG1POVZBc09INUVHN3NKMW9OR3RUdWdHSm00L1R1WGRFMjk0NklpYi82UXhiYTlqZHhzN2F2cFAzdnJVL3ZQNU1FR0VWZ0pWZi9NMVR0RmwyRXk1Nzk1RkNyQ29aTEhlUjYyRXZLaDBWRHVQSTYweHZaNDgzZG1lMmRYVUhmNEVXZkRsSW0wbys3Rjg4OXBnaUdkd0pPeTdsTjlaSnk1TDI3Nk82Z0xIVFpzdGlIVWRaelp3c2VoektYWlplVEN5Q09TUm1oU24vNy9pQnJyMUhPZ0dvYUQ1NmdtY0RTWFNxR1lzRTczNnZuOXVSK09VMFRwL1pUUnRNOEdQL3pDZnNFNDUvQXIwY1BhbGg0VDNsQXVnTFNpOWFuSTYxZnZua0oyaXM2RGR3bEt1NkNKclVvTjYwYnJXUW00TWVoTU1vd0FWSUNqN2lodTBydWRLT08yU0wyVFlNcWhrbHdSdTNQSXovUW8vVVdIMEtSYndkQUpCenh3YnYrYlhKVE91aGROamJya2ducVhORnhVcm51TjVZMnlTMDIvSTBzUkh5NzlPb3Frb24rTXhLdXljaVA5TmZDVWRnMXM4SmRjQkJTWkdLMXVBUEdJRzU2NU12dnlpdWd1bElXM2E4Z1lEMkl5YnF4d2ZHaTJ6QVN2TSs1ajV1K2J6dVhEOVlaRzh1bTA1dldYbkkxd29kbGFrbmFIS205QlNKMnRZSXV1NldlYVJ6Qy9ZdEdsaUVWSlYzTXpPTUhkSmxFTlY0PSIsImRhdGFrZXkiOiJBUUlCQUhpSFdhWVRuUlVXQ2Jueis3THZNRytBUHZUSHpIbEJVUTlGcUVtVjI2QmR3d0YzcW1xMURZSnNDaHBhZWRrSjZlMTlBQUFBZmpCOEJna3Foa2lHOXcwQkJ3YWdiekJ0QWdFQU1HZ0dDU3FHU0liM0RRRUhBVEFlQmdsZ2hrZ0JaUU1FQVM0d0VRUU1MbjZ2Q1JTa1dObytqNDRuQWdFUWdEdTFuSE5GOWoxWDUvU3dsdmNDL2JjWm5LWW5VSnlwQUNFOUFRSHJLM1g5ZlZLMmNET29LRWdmZ04yWml2b0FCWkZnRlVSN1JXWjMzSklLckE9PSIsInZlcnNpb24iOiIyIiwidHlwZSI6IkRBVEFfS0VZIiwiZXhwaXJhdGlvbiI6MTYzOTQzMzcxM30=</password>
+    					</auth>
 						<tags>
 							<tag>auth</tag>
 						</tags>
