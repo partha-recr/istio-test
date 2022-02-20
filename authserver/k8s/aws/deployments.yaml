@@ -1,0 +1,84 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: payment-service
+  labels:
+    app: payment-service
+    service: payment-service
+spec:
+  ports:
+  - port: 8080
+    name: http
+  selector:
+    app: payment-service
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: payment-service-account
+  labels:
+    account: payment-service
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: payment-service-v1
+  labels:
+    app: payment-service
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: payment-service
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: payment-service
+        version: v1
+    spec:
+      serviceAccountName: payment-service-account
+      containers:
+      - name: payment-service
+        image: 542247608415.dkr.ecr.ap-south-1.amazonaws.com/payment:latest
+        imagePullPolicy: Always
+        env:
+        - name: version
+          value: "V1"
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: awssecret
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: payment-service-v2
+  labels:
+    app: payment-service
+    version: v2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: payment-service
+      version: v2
+  template:
+    metadata:
+      labels:
+        app: payment-service
+        version: v2
+    spec:
+      serviceAccountName: payment-service-account
+      containers:
+      - name: payment-service
+        image: 542247608415.dkr.ecr.ap-south-1.amazonaws.com/payment:latest
+        imagePullPolicy: Always
+        env:
+        - name: version
+          value: "V2"
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: awssecret
