@@ -1,0 +1,42 @@
+2022-02-21 19:50:01.839  INFO 18216 --- [main] BootActuatorPrometheusGrafanaApplication : Starting SpringBootActuatorPrometheusGrafanaApplication on DESKTOP-LAMFAI0 with PID 18216 (C:\partha\grafana_prometheous\prometheus-grafana\target\classes started by parth in C:\partha\grafana_prometheous\prometheus-grafana)
+2022-02-21 19:50:01.843  INFO 18216 --- [main] BootActuatorPrometheusGrafanaApplication : No active profile set, falling back to default profiles: default
+2022-02-21 19:50:03.924  INFO 18216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-21 19:50:03.933  INFO 18216 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-21 19:50:03.934  INFO 18216 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2022-02-21 19:50:04.005  INFO 18216 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-21 19:50:04.005  INFO 18216 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2057 ms
+2022-02-21 19:50:04.495  INFO 18216 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-21 19:50:04.720  INFO 18216 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2022-02-21 19:50:04.833  INFO 18216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-21 19:50:04.837  INFO 18216 --- [main] BootActuatorPrometheusGrafanaApplication : Started SpringBootActuatorPrometheusGrafanaApplication in 3.454 seconds (JVM running for 3.832)
+2022-02-21 19:50:30.290  INFO 18216 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-21 19:50:30.290  INFO 18216 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-21 19:50:30.299  INFO 18216 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2022-02-21 20:43:33.192  INFO 21044 --- [main] BootActuatorPrometheusGrafanaApplication : Starting SpringBootActuatorPrometheusGrafanaApplication on DESKTOP-LAMFAI0 with PID 21044 (C:\partha\grafana_prometheous\prometheus-grafana\target\classes started by parth in C:\partha\grafana_prometheous\prometheus-grafana)
+2022-02-21 20:43:33.195  INFO 21044 --- [main] BootActuatorPrometheusGrafanaApplication : No active profile set, falling back to default profiles: default
+2022-02-21 20:43:34.427  INFO 21044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-21 20:43:34.437  INFO 21044 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-21 20:43:34.437  INFO 21044 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2022-02-21 20:43:34.510  INFO 21044 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-21 20:43:34.510  INFO 21044 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1262 ms
+2022-02-21 20:43:34.953  INFO 21044 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-21 20:43:35.187  INFO 21044 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2022-02-21 20:43:35.310  INFO 21044 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-21 20:43:35.314  INFO 21044 --- [main] BootActuatorPrometheusGrafanaApplication : Started SpringBootActuatorPrometheusGrafanaApplication in 2.55 seconds (JVM running for 3.073)
+2022-02-21 20:43:37.582  INFO 21044 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-21 20:43:37.582  INFO 21044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-21 20:43:37.588  INFO 21044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-02-21 21:22:11.853  INFO 10468 --- [main] BootActuatorPrometheusGrafanaApplication : Starting SpringBootActuatorPrometheusGrafanaApplication on DESKTOP-LAMFAI0 with PID 10468 (C:\partha\grafana_prometheous\prometheus-grafana\target\classes started by parth in C:\partha\grafana_prometheous\prometheus-grafana)
+2022-02-21 21:22:11.856  INFO 10468 --- [main] BootActuatorPrometheusGrafanaApplication : No active profile set, falling back to default profiles: default
+2022-02-21 21:22:13.491  INFO 10468 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-21 21:22:13.506  INFO 10468 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-21 21:22:13.506  INFO 10468 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2022-02-21 21:22:13.622  INFO 10468 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-21 21:22:13.622  INFO 10468 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1708 ms
+2022-02-21 21:22:14.310  INFO 10468 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-21 21:22:14.541  INFO 10468 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2022-02-21 21:22:14.669  INFO 10468 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-21 21:22:14.673  INFO 10468 --- [main] BootActuatorPrometheusGrafanaApplication : Started SpringBootActuatorPrometheusGrafanaApplication in 3.181 seconds (JVM running for 3.547)
+2022-02-21 21:22:15.684  INFO 10468 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-21 21:22:15.685  INFO 10468 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-21 21:22:15.690  INFO 10468 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
